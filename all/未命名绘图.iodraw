@@ -100,6 +100,9 @@
         <mxCell id="uZHe72_r7FB4REITYRq9-25" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;Valid Subset&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="447.5" y="700" width="112.5" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="uZHe72_r7FB4REITYRq9-26" value="Algorithm Execution Phase" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="297.5" y="130" width="60" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
