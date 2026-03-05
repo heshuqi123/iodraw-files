@@ -100,7 +100,7 @@
         <mxCell id="uZHe72_r7FB4REITYRq9-25" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;Valid Subset&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="447.5" y="700" width="112.5" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="uZHe72_r7FB4REITYRq9-26" value="&lt;font color=&quot;#e6e6e6&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Algorithm Execution Phase&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="uZHe72_r7FB4REITYRq9-26" value="&lt;font color=&quot;#1a1a1a&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Algorithm Execution Phase&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="222.5" y="130" width="172.5" height="30" as="geometry" />
         </mxCell>
       </root>
