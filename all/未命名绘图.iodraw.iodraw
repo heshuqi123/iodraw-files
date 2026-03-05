@@ -43,7 +43,7 @@
             <mxPoint x="770" y="225" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="RMK2jmh32KDXlIP_onMf-12" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CCFFCC;strokeColor=#00FF00;strokeWidth=3;" vertex="1" parent="1">
+        <mxCell id="RMK2jmh32KDXlIP_onMf-12" value="Decision-Level Fusion&lt;div&gt;Meta-Learner (W &lt;sub&gt;meta&lt;/sub&gt;)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CCFFCC;strokeColor=#00FF00;strokeWidth=3;" vertex="1" parent="1">
           <mxGeometry x="640" y="280" width="293" height="130" as="geometry" />
         </mxCell>
       </root>
