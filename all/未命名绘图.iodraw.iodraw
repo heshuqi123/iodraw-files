@@ -19,6 +19,9 @@
         <mxCell id="RMK2jmh32KDXlIP_onMf-5" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#99CCFF;strokeWidth=3;" vertex="1" parent="1">
           <mxGeometry x="310" y="67.5" width="340" height="235" as="geometry" />
         </mxCell>
+        <mxCell id="RMK2jmh32KDXlIP_onMf-6" value="Text" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="80" width="60" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
