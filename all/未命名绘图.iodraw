@@ -76,7 +76,7 @@
             <mxPoint x="495" y="664" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="uZHe72_r7FB4REITYRq9-19" value="Feasible Set&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="uZHe72_r7FB4REITYRq9-19" value="Feasible Set&amp;nbsp;Φ" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="510" y="650" width="90" height="30" as="geometry" />
         </mxCell>
       </root>
