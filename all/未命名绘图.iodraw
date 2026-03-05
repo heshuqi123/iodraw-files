@@ -19,6 +19,16 @@
         <mxCell id="3ijKDh4gzoUicO5yrvDI-4" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;strokeWidth=2;strokeColor=#66B2FF;" vertex="1" parent="1">
           <mxGeometry x="170" y="410" width="80" height="230" as="geometry" />
         </mxCell>
+        <mxCell id="3ijKDh4gzoUicO5yrvDI-5" value="" style="curved=1;endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="3ijKDh4gzoUicO5yrvDI-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="590" as="sourcePoint" />
+            <mxPoint x="170" y="540" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="170" y="590" />
+              <mxPoint x="120" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
