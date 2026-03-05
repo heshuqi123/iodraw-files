@@ -7,7 +7,7 @@
         <mxCell id="RMK2jmh32KDXlIP_onMf-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="350" y="300" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="RMK2jmh32KDXlIP_onMf-2" value="Trend &amp;amp; Seasonal&lt;div&gt;T&lt;sub&gt;t,St&lt;/sub&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="RMK2jmh32KDXlIP_onMf-2" value="Trend &amp;amp; Seasonal&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="50" y="130" width="210" height="90" as="geometry" />
         </mxCell>
       </root>
