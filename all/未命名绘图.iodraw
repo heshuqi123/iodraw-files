@@ -12,12 +12,12 @@
         </mxCell>
         <mxCell id="3ijKDh4gzoUicO5yrvDI-3" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;strokeColor=#66B2FF;strokeWidth=2;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="170" y="410" as="sourcePoint" />
-            <mxPoint x="250" y="410" as="targetPoint" />
+            <mxPoint x="170" y="400" as="sourcePoint" />
+            <mxPoint x="250" y="400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="3ijKDh4gzoUicO5yrvDI-4" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;strokeWidth=2;strokeColor=#66B2FF;" vertex="1" parent="1">
-          <mxGeometry x="170" y="430" width="80" height="230" as="geometry" />
+          <mxGeometry x="170" y="460" width="80" height="230" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
