@@ -22,10 +22,10 @@
         <mxCell id="P0vv9YAXQmpDNylNimnQ-1" value="Text" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="370" y="310" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="P0vv9YAXQmpDNylNimnQ-2" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;LSTM Sequence Branch&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="P0vv9YAXQmpDNylNimnQ-2" value="&lt;b&gt;&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 16px;&quot;&gt;LSTM Sequence Branch&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-17.5" y="270" width="215" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="P0vv9YAXQmpDNylNimnQ-3" value="STL Decomposed&lt;div&gt;Sequences&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="P0vv9YAXQmpDNylNimnQ-3" value="&lt;font face=&quot;Times New Roman&quot;&gt;STL Decomposed&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;ZRhKdGQ8kcqcl1SEDv_o&quot;&gt;Sequences&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-10" y="310" width="200" height="40" as="geometry" />
         </mxCell>
       </root>
