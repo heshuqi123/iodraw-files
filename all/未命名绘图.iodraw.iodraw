@@ -46,7 +46,7 @@
         <mxCell id="1-yO7gU91ZwtK_c8KXhu-13" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot; face=&quot;Times New Roman&quot;&gt;Temporal Stream&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1370" y="50" width="150" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="1-yO7gU91ZwtK_c8KXhu-14" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="1-yO7gU91ZwtK_c8KXhu-14" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot; face=&quot;Times New Roman&quot;&gt;LSTM Temporal Branch&lt;/font&gt;&lt;/b&gt;&lt;div&gt;Long-term dependency modeling&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1310" y="100" width="280" height="120" as="geometry" />
         </mxCell>
       </root>
