@@ -43,8 +43,8 @@
         <mxCell id="1-yO7gU91ZwtK_c8KXhu-12" value="&lt;font size=&quot;1&quot; face=&quot;Times New Roman&quot;&gt;&lt;b style=&quot;font-size: 20px;&quot;&gt;Dual-Stream Collaborative Prediction&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1280" width="330" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="1-yO7gU91ZwtK_c8KXhu-13" value="Text" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1080" y="240" width="60" height="30" as="geometry" />
+        <mxCell id="1-yO7gU91ZwtK_c8KXhu-13" value="Temporal Stream" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1415" y="50" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
