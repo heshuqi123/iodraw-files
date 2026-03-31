@@ -69,7 +69,7 @@
             <mxPoint x="1150" y="230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="1-yO7gU91ZwtK_c8KXhu-26" value="&lt;font face=&quot;Times New Roman&quot;&gt;Final Temperature Prediction&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;JWRzYZaFinIUUoucdEou&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;JWRzYZaFinIUUoucdEou&quot;&gt;Prediction output&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="1-yO7gU91ZwtK_c8KXhu-26" value="&lt;font size=&quot;1&quot; face=&quot;Times New Roman&quot;&gt;&lt;b style=&quot;font-size: 20px;&quot;&gt;Final Temperature Prediction&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;JWRzYZaFinIUUoucdEou&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot; face=&quot;Times New Roman&quot;&gt;Prediction output&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1320" y="670" width="270" height="90" as="geometry" />
         </mxCell>
       </root>
