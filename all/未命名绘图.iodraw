@@ -76,6 +76,9 @@
         <mxCell id="P0vv9YAXQmpDNylNimnQ-22" value="" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="250" y="700" width="350" height="45" as="geometry" />
         </mxCell>
+        <mxCell id="P0vv9YAXQmpDNylNimnQ-24" value="Surrogate Model Setpoint Optimization Based on Monte Carlo Neighborhood Search" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="670" width="480" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
