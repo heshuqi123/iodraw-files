@@ -31,7 +31,7 @@
         <mxCell id="1-yO7gU91ZwtK_c8KXhu-9" value="" style="curved=1;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="700" y="410" as="sourcePoint" />
-            <mxPoint x="750" y="360" as="targetPoint" />
+            <mxPoint x="750" y="330" as="targetPoint" />
             <Array as="points">
               <mxPoint x="750" y="410" />
               <mxPoint x="700" y="360" />
