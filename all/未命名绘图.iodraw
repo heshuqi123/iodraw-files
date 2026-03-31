@@ -61,10 +61,10 @@
         <mxCell id="P0vv9YAXQmpDNylNimnQ-17" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;direction=north;" vertex="1" parent="1">
           <mxGeometry x="90" y="480" width="670" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="P0vv9YAXQmpDNylNimnQ-18" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="P0vv9YAXQmpDNylNimnQ-18" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="424.5" y="525" as="sourcePoint" />
-            <mxPoint x="424.5" y="585" as="targetPoint" />
+            <mxPoint x="425" y="560" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
