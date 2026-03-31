@@ -4,17 +4,8 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="3ijKDh4gzoUicO5yrvDI-2" value="&lt;font size=&quot;1&quot; color=&quot;#66b2ff&quot;&gt;&lt;b style=&quot;font-size: 16px;&quot;&gt;Window Length k&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="140" y="360" width="150" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="3ijKDh4gzoUicO5yrvDI-3" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;strokeColor=#66B2FF;strokeWidth=2;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="170" y="400" as="sourcePoint" />
-            <mxPoint x="250" y="400" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="3ijKDh4gzoUicO5yrvDI-4" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;strokeWidth=2;strokeColor=#66B2FF;" parent="1" vertex="1">
-          <mxGeometry x="170" y="410" width="80" height="230" as="geometry" />
+        <mxCell id="mKgLt4BiYoh-wC2Le-hp-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="300" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
