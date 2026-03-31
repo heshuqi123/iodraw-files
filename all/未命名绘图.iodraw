@@ -61,8 +61,8 @@
         <mxCell id="P0vv9YAXQmpDNylNimnQ-17" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;direction=north;" vertex="1" parent="1">
           <mxGeometry x="90" y="480" width="670" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="P0vv9YAXQmpDNylNimnQ-19" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="290" y="530" width="250" height="60" as="geometry" />
+        <mxCell id="P0vv9YAXQmpDNylNimnQ-19" value="Stacking Fusion" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="530" width="270" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
