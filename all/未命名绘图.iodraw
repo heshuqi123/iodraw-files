@@ -10,8 +10,8 @@
         <mxCell id="mKgLt4BiYoh-wC2Le-hp-1" value="&lt;font size=&quot;1&quot; face=&quot;Times New Roman&quot;&gt;&lt;b style=&quot;font-size: 18px;&quot;&gt;Industrial Process Data&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="244" y="60" width="340" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="mKgLt4BiYoh-wC2Le-hp-2" value="" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="354" y="150" width="236" height="60" as="geometry" />
+        <mxCell id="mKgLt4BiYoh-wC2Le-hp-2" value="Feature Enhancement&lt;div&gt;STL + Lag Features + Operational Features&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="150" width="350" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
