@@ -31,8 +31,8 @@
         <mxCell id="P0vv9YAXQmpDNylNimnQ-3" value="&lt;font style=&quot;font-size: 14px;&quot; face=&quot;Times New Roman&quot;&gt;&lt;b style=&quot;&quot;&gt;STL Decomposed&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot; face=&quot;ZRhKdGQ8kcqcl1SEDv_o&quot;&gt;&lt;b style=&quot;&quot;&gt;Sequences&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-10" y="310" width="200" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="P0vv9YAXQmpDNylNimnQ-4" value="" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-10" y="370" width="160" height="30" as="geometry" />
+        <mxCell id="P0vv9YAXQmpDNylNimnQ-4" value="LSTM Network" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="370" width="200" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
