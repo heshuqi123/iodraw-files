@@ -69,7 +69,7 @@
             <mxPoint x="1150" y="230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="1-yO7gU91ZwtK_c8KXhu-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1-yO7gU91ZwtK_c8KXhu-26" target="1-yO7gU91ZwtK_c8KXhu-33">
+        <mxCell id="1-yO7gU91ZwtK_c8KXhu-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="1-yO7gU91ZwtK_c8KXhu-26" target="1-yO7gU91ZwtK_c8KXhu-33">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="1-yO7gU91ZwtK_c8KXhu-26" value="&lt;font size=&quot;1&quot; face=&quot;Times New Roman&quot;&gt;&lt;b style=&quot;font-size: 20px;&quot;&gt;Final Temperature Prediction&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;JWRzYZaFinIUUoucdEou&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot; face=&quot;Times New Roman&quot;&gt;Prediction output&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -88,6 +88,9 @@
         </mxCell>
         <mxCell id="1-yO7gU91ZwtK_c8KXhu-33" value="&lt;font size=&quot;1&quot; face=&quot;Times New Roman&quot;&gt;&lt;b style=&quot;font-size: 20px;&quot;&gt;Optimized&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Setpoints&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1700" y="660" width="120" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="1-yO7gU91ZwtK_c8KXhu-35" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1770" y="310" width="80" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
