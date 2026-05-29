@@ -1,0 +1,130 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ioDraw.com/3.5.1 Chrome/124.0.6367.49 Electron/30.0.0 Safari/537.36" version="24.7.17">
+  <diagram id="图4_双流协同预测模型训练流程图" name="图4_双流协同预测模型训练流程图">
+    <mxGraphModel dx="1050" dy="629" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="1450" math="1" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="双流协同预测模型训练流程图" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontSize=24;fontStyle=1;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="120" y="20" width="660" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="sub" value="Flowchart of Dual-Stream Collaborative Prediction Model Training" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=13;fontColor=#444444;" parent="1" vertex="1">
+          <mxGeometry x="120" y="54" width="660" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="start" value="开始" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#DDEBF7;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="370" y="90" width="160" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="input" value="输入：重采样后的工业过程数据 D，窗口长度 w，训练集&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;，验证集&amp;nbsp;&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#DDEBF7;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#000000;spacing=8;" parent="1" vertex="1">
+          <mxGeometry x="190" y="160" width="520" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="stl" value="对目标温度序列执行 STL 分解，得到趋势项 T_t、季节项 S_t 和残差项 R_t" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF3F8;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#000000;spacing=8;" parent="1" vertex="1">
+          <mxGeometry x="190" y="245" width="520" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="feat" value="结合原始变量、分解分量及其滞后项构造增强特征" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF3F8;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#000000;spacing=8;" parent="1" vertex="1">
+          <mxGeometry x="190" y="330" width="520" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="lstm_in" value="根据窗口长度 w 构造 LSTM 分支输入序列 X_t" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF3F8;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#000000;spacing=8;" parent="1" vertex="1">
+          <mxGeometry x="190" y="405" width="520" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="cat_in" value="提取窗口末时刻状态特征，构造 CatBoost 分支输入 x_t" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF3F8;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#000000;spacing=8;" parent="1" vertex="1">
+          <mxGeometry x="190" y="480" width="520" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="train_l" value="利用训练集训练 LSTM 分支，得到预测模型 f_L(·)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF3F8;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#000000;spacing=8;" parent="1" vertex="1">
+          <mxGeometry x="190" y="555" width="520" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="train_c" value="利用训练集训练 CatBoost 分支，得到预测模型 f_C(·)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF3F8;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#000000;spacing=8;" parent="1" vertex="1">
+          <mxGeometry x="190" y="630" width="520" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="foreach" value="对每个样本时刻 t 执行" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF3F8;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#000000;spacing=8;" parent="1" vertex="1">
+          <mxGeometry x="190" y="705" width="520" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="grp" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F4F8FB;strokeColor=#5B9BD5;strokeWidth=1.5;dashed=1;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#2F5597;" parent="1" vertex="1">
+          <mxGeometry x="80" y="768" width="740" height="385" as="geometry" />
+        </mxCell>
+        <mxCell id="glabel" value="样本级融合&lt;br&gt;特征构造" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontSize=14;fontStyle=1;fontColor=#2F5597;" parent="1" vertex="1">
+          <mxGeometry x="95" y="908" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="calc_l" value="计算 LSTM 分支输出 ŷ_{L,t} = f_L(X_t)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF3F8;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#000000;spacing=8;" parent="1" vertex="1">
+          <mxGeometry x="235" y="778" width="470" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="calc_c" value="计算 CatBoost 分支输出 ŷ_{C,t} = f_C(x_t)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF3F8;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#000000;spacing=8;" parent="1" vertex="1">
+          <mxGeometry x="235" y="853" width="470" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="fusion_z" value="构造融合输入 Z_t = [ŷ_{L,t}, ŷ_{C,t}]^T" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF3F8;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#000000;spacing=8;" parent="1" vertex="1">
+          <mxGeometry x="235" y="928" width="470" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="dec" value="是否已遍历全部样本时刻？" style="rhombus;whiteSpace=wrap;html=1;fillColor=#DDEBF7;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#000000;spacing=8;" parent="1" vertex="1">
+          <mxGeometry x="330" y="1013" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="meta" value="基于训练集预测结果训练元学习器 f_S(·)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF3F8;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#000000;spacing=8;" parent="1" vertex="1">
+          <mxGeometry x="190" y="1128" width="520" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="model" value="得到融合预测模型 F(·) = f_S(f_L(·), f_C(·))" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF3F8;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#000000;spacing=8;" parent="1" vertex="1">
+          <mxGeometry x="190" y="1203" width="520" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="valid" value="利用验证集调整模型超参数并确定训练轮次" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF3F8;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#000000;spacing=8;" parent="1" vertex="1">
+          <mxGeometry x="190" y="1278" width="520" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="output" value="输出：融合预测模型 F(·)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#DDEBF7;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#000000;spacing=8;" parent="1" vertex="1">
+          <mxGeometry x="190" y="1353" width="520" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="end" value="结束" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#DDEBF7;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="370" y="1431" width="160" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" parent="1" source="start" target="input" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" parent="1" source="input" target="stl" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" parent="1" source="stl" target="feat" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" parent="1" source="feat" target="lstm_in" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" parent="1" source="lstm_in" target="cat_in" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" parent="1" source="cat_in" target="train_l" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" parent="1" source="train_l" target="train_c" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" parent="1" source="train_c" target="foreach" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" parent="1" source="foreach" target="calc_l" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" parent="1" source="calc_l" target="calc_c" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" parent="1" source="calc_c" target="fusion_z" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" parent="1" source="fusion_z" target="dec" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" parent="1" source="dec" target="meta" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" parent="1" source="dec" target="calc_l" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" parent="1" source="meta" target="model" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" parent="1" source="model" target="valid" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" parent="1" source="valid" target="output" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" parent="1" source="output" target="end" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
