@@ -14,7 +14,7 @@
           <mxGeometry x="370" y="90" width="160" height="45" as="geometry" />
         </mxCell>
         <mxCell id="input" value="输入：重采样后的工业过程数据 D，窗口长度 w，训练集$$D_t$$&lt;span style=&quot;background-color: initial;&quot;&gt;，验证集$$D_val$$&amp;nbsp;&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#DDEBF7;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#000000;spacing=8;" parent="1" vertex="1">
-          <mxGeometry x="190" y="160" width="520" height="62" as="geometry" />
+          <mxGeometry x="190" y="180" width="520" height="62" as="geometry" />
         </mxCell>
         <mxCell id="stl" value="对目标温度序列执行 STL 分解，得到趋势项 T_t、季节项 S_t 和残差项 R_t" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF3F8;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#000000;spacing=8;" parent="1" vertex="1">
           <mxGeometry x="190" y="245" width="520" height="62" as="geometry" />
