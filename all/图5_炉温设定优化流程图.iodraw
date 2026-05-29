@@ -1,0 +1,83 @@
+<mxfile host="app.diagrams.net" modified="2026-05-29T00:00:00.000Z" agent="ChatGPT" version="24.7.8" type="device">
+<diagram id="图5_炉温设定优化流程图" name="图5_炉温设定优化流程图">
+<mxGraphModel dx="1200" dy="1600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="1050" math="1" shadow="0">
+<root>
+<mxCell id="0"/>
+<mxCell id="1" parent="0"/>
+<mxCell id="title" value="炉温设定优化流程图" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontSize=24;fontStyle=1;fontColor=#000000;" vertex="1" parent="1">
+<mxGeometry x="120" y="20" width="660" height="35" as="geometry"/>
+</mxCell><mxCell id="sub" value="Flowchart of Furnace Temperature Setpoint Optimization" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=13;fontColor=#444444;" vertex="1" parent="1">
+<mxGeometry x="120" y="54" width="660" height="28" as="geometry"/>
+</mxCell><mxCell id="start" value="开始" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#DDEBF7;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#000000;" vertex="1" parent="1">
+<mxGeometry x="370" y="90" width="160" height="45" as="geometry"/>
+</mxCell><mxCell id="input" value="输入：当前冻结状态变量 x_state，初始炉温设定 u^(0)，代理模型 F(·)，候选方案数量 N_c，扰动半径 Δ，温度约束区间 [y_min, y_max]" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#DDEBF7;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#000000;spacing=8;" vertex="1" parent="1">
+<mxGeometry x="170" y="160" width="560" height="78" as="geometry"/>
+</mxCell><mxCell id="init" value="初始化可行解集合 Ω ← ∅" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF3F8;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#000000;spacing=8;" vertex="1" parent="1">
+<mxGeometry x="170" y="261" width="560" height="52" as="geometry"/>
+</mxCell><mxCell id="j1" value="令 j = 1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF3F8;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#000000;spacing=8;" vertex="1" parent="1">
+<mxGeometry x="170" y="336" width="560" height="45" as="geometry"/>
+</mxCell><mxCell id="jdec" value="j ≤ N_c ?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#DDEBF7;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#000000;spacing=8;" vertex="1" parent="1">
+<mxGeometry x="355" y="404" width="190" height="82" as="geometry"/>
+</mxCell><mxCell id="gen" value="在邻域内生成候选设定方案 u^(j) = u^(0) + ε_j" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF3F8;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#000000;spacing=8;" vertex="1" parent="1">
+<mxGeometry x="170" y="514" width="560" height="52" as="geometry"/>
+</mxCell><mxCell id="concat" value="构造候选工况 x̄_j = Concat(x_state, u^(j))" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF3F8;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#000000;spacing=8;" vertex="1" parent="1">
+<mxGeometry x="170" y="589" width="560" height="52" as="geometry"/>
+</mxCell><mxCell id="pred" value="调用代理模型计算温度预测值 ŷ^(j) = F(x̄_j)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF3F8;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#000000;spacing=8;" vertex="1" parent="1">
+<mxGeometry x="170" y="664" width="560" height="52" as="geometry"/>
+</mxCell><mxCell id="cdec" value="y_min ≤ ŷ^(j) ≤ y_max ?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#DDEBF7;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#000000;spacing=8;" vertex="1" parent="1">
+<mxGeometry x="320" y="749" width="260" height="90" as="geometry"/>
+</mxCell><mxCell id="add" value="将 u^(j) 加入可行解集合 Ω" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF3F8;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#000000;spacing=8;" vertex="1" parent="1">
+<mxGeometry x="170" y="864" width="560" height="52" as="geometry"/>
+</mxCell><mxCell id="jplus" value="j = j + 1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF3F8;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#000000;spacing=8;" vertex="1" parent="1">
+<mxGeometry x="170" y="939" width="560" height="45" as="geometry"/>
+</mxCell><mxCell id="odec" value="Ω = ∅ ?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#DDEBF7;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#000000;spacing=8;" vertex="1" parent="1">
+<mxGeometry x="635" y="475" width="160" height="82" as="geometry"/>
+</mxCell><mxCell id="keep" value="u* ← u^(0)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF3F8;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#000000;spacing=8;" vertex="1" parent="1">
+<mxGeometry x="565" y="610" width="180" height="48" as="geometry"/>
+</mxCell><mxCell id="select" value="在 Ω 中选取满足 Σu_i 最小的候选方案作为 u*" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF3F8;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#000000;spacing=8;" vertex="1" parent="1">
+<mxGeometry x="475" y="685" width="360" height="60" as="geometry"/>
+</mxCell><mxCell id="output" value="输出：优化后的炉温设定 u*" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#DDEBF7;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=13;fontColor=#000000;spacing=8;" vertex="1" parent="1">
+<mxGeometry x="240" y="790" width="420" height="55" as="geometry"/>
+</mxCell><mxCell id="end" value="结束" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#DDEBF7;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#000000;" vertex="1" parent="1">
+<mxGeometry x="370" y="870" width="160" height="45" as="geometry"/>
+</mxCell><mxCell id="e0" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" edge="1" parent="1" source="start" target="input">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell><mxCell id="e1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" edge="1" parent="1" source="input" target="init">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell><mxCell id="e2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" edge="1" parent="1" source="init" target="j1">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell><mxCell id="e3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" edge="1" parent="1" source="j1" target="jdec">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell><mxCell id="e4" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" edge="1" parent="1" source="jdec" target="gen">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell><mxCell id="e5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" edge="1" parent="1" source="gen" target="concat">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell><mxCell id="e6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" edge="1" parent="1" source="concat" target="pred">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell><mxCell id="e7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" edge="1" parent="1" source="pred" target="cdec">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell><mxCell id="e8" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" edge="1" parent="1" source="cdec" target="add">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell><mxCell id="e9" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" edge="1" parent="1" source="cdec" target="jplus">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell><mxCell id="e10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" edge="1" parent="1" source="add" target="jplus">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell><mxCell id="e11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" edge="1" parent="1" source="jplus" target="jdec">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell><mxCell id="e12" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" edge="1" parent="1" source="jdec" target="odec">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell><mxCell id="e13" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" edge="1" parent="1" source="odec" target="keep">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell><mxCell id="e14" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" edge="1" parent="1" source="odec" target="select">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell><mxCell id="e15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" edge="1" parent="1" source="keep" target="output">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell><mxCell id="e16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" edge="1" parent="1" source="select" target="output">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell><mxCell id="e17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" edge="1" parent="1" source="output" target="end">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell>
+</root>
+</mxGraphModel>
+</diagram>
+</mxfile>
