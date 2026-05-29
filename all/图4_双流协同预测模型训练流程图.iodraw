@@ -124,8 +124,8 @@
         <mxCell id="e17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2F5597;strokeWidth=1.5;fontFamily=Microsoft YaHei;fontSize=12;" parent="1" source="output" target="end" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="lE_4KdEo4AatGT6cV9Ik-2" value="Text" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="70" y="60" width="60" height="30" as="geometry" />
+        <mxCell id="lE_4KdEo4AatGT6cV9Ik-2" value="&lt;span style=&quot;font-family: &amp;quot;Microsoft YaHei&amp;quot;; font-size: 13px;&quot;&gt;输入：重采样后的工业过程数据 D，窗口长度 w，训练集$$D_t$$&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;Microsoft YaHei&amp;quot;; font-size: 13px; background-color: initial;&quot;&gt;，验证集$$D_val$$&amp;nbsp;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="60" width="300" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
